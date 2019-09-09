@@ -5,9 +5,8 @@ Users can customize the interception rules and support powerful lua script.
 # Document
 
 ## Basic Struct
----
 
-```
+```lua
 -- TCP Part
 
 function dorequest(tunnel, buf)
@@ -92,7 +91,7 @@ end
 ---
 
 module define
-```
+```lua
 -- identifier ppp.sample
 
 function module.test_swap(a, b)
@@ -101,7 +100,7 @@ end
 ```
 
 module usage in other task
-```
+```lua
 local status,b,a = invoke("ppp.sample", "test_swap", 1, 2)
 assert(status and b == 2 and a == 1)
 ```
