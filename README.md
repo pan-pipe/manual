@@ -120,7 +120,7 @@ assert(status and b == 2 and a == 1)
 | Property | Type | Description |
 | ------------- | ------------- | ------------- |
 | headers | table | get header map, if there are more than one value for the same key, the value will be value list. |
-| header_list | table | get header list, format `{{key = xx, value = xx}, {key = xx, value = xx} ...}` |
+| header_list | table | get header list, format `[{key = xx, value = xx}, {key = xx, value = xx} ...]` |
 | body | string | get or set the body before request or after response |
 | path | string | get or set the path before request, or get the path after response |
 
