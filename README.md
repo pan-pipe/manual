@@ -110,8 +110,8 @@ assert(status and b == 2 and a == 1)
 
 | Method      | Parameters    | Return Type   | Description   |
 | ------------- | ------------- | ------------- | ------------- |
-| setheader | key:string, value:string | void | set header by kv before request or after response, old header with the same key will be replaced. e.g. context:setheader("KEY", "VALUE") |
-| addheader | key:string, value:string | void | set header by kv before request or after response, will merge with old header(if exist). e.g. context:addheader("KEY", "VALUE") |
+| setheader | key:string, value:string | void | set header by kv before request or after response, old header with the same key will be replaced. e.g. `context:setheader("KEY", "VALUE")` |
+| addheader | key:string, value:string | void | set header by kv before request or after response, will merge with old header(if exist). e.g. `context:addheader("KEY", "VALUE")` |
 | removeheader | key:string | void | remove header by key before request or after response. |
 | chunks_gsub | src:string, dest:string | count:number | do string.gsub over current chunk and last chunk, only work inside `dohttpresponse_chunk`. |
 | header_map | void | headers:table | get kv map from context, header with same key will be override. |
@@ -120,7 +120,7 @@ assert(status and b == 2 and a == 1)
 | Property | Type | Description |
 | ------------- | ------------- | ------------- |
 | headers | table | get header map, if there are more than one value for the same key, the value will be value list. |
-| header_list | table | get header list, format {{key = xx, value = xx}, {key = xx, value = xx} ...} |
+| header_list | table | get header list, format `{{key = xx, value = xx}, {key = xx, value = xx} ...}` |
 | body | string | get or set the body before request or after response |
 | path | string | get or set the path before request, or get the path after response |
 
@@ -129,7 +129,7 @@ assert(status and b == 2 and a == 1)
 
 | Method      | Parameters    | Return Type   | Description   |
 | ------------- | ------------- | ------------- | ------------- |
-| sleep | second:number | void | sleep for a while, e.g. fan.sleep(0.5) |
+| sleep | second:number | void | sleep for a while, e.g. `fan.sleep(0.5)` |
 
 ## utils
 ---
